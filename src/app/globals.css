@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #176B45;
+  --color-deep: #104B35;
+  --color-accent: #72B85A;
+  --color-warm-bg: #F7F8F2;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #1F2933;
+  --color-text-secondary: #667085;
+  --color-border: #E4E8E1;
+}
+
+body {
+  background-color: var(--color-warm-bg);
+  color: var(--color-text-primary);
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure Telugu text renders smoothly */
+[lang="te"], .font-telugu {
+  font-family: 'Noto Sans Telugu', 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Leaflet map styles */
+@import "leaflet/dist/leaflet.css";
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  z-index: 10;
+}
+
+/* Accessible animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Print styling for Agricultural Settlement Invoices & Vouchers */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  header, footer, nav, .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:border-none {
+    border: none !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+}

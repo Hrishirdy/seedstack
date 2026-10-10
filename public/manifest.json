@@ -1,0 +1,42 @@
+{
+  "name": "SEEDSTACK — AI Agricultural Marketplace (TS & AP)",
+  "short_name": "SEEDSTACK",
+  "description": "Direct farmer-to-vendor marketplace connecting agricultural producers in Telangana and Andhra Pradesh with 0% middleman commission.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#15803d",
+  "orientation": "portrait",
+  "lang": "te",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "🌾 కిసాన్ శీఘ్ర అమ్మకం (Sell Crop)",
+      "short_name": "Sell Crop",
+      "description": "List your crop harvest directly in 1 minute",
+      "url": "/farmer/sell",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
+    },
+    {
+      "name": "📈 నేటి మార్కెట్ ధరలు (Mandi Rates)",
+      "short_name": "Mandi Rates",
+      "description": "Live APMC Mandi commodity price ticker",
+      "url": "/ai-insights",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
+    },
+    {
+      "name": "🏢 కొనుగోలుదారుల డెస్క్ (Buyer Desk)",
+      "short_name": "Buyer Desk",
+      "description": "Commercial buyer requirements and sourcing",
+      "url": "/buyer/dashboard",
+      "icons": [{ "src": "/favicon.ico", "sizes": "64x64" }]
+    }
+  ]
+}
